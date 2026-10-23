@@ -25,7 +25,17 @@ No Windows, se o comando `python` não estiver configurado, tente:
 py Exercicio_Calculadora/calculadora.py
 ```
 
-## 🧪 Exemplo de uso
+## 🧪 Testes automatizados
+
+A calculadora inclui testes para as quatro operações, divisão por zero, formatação de números e entrada decimal com vírgula. Para executá-los a partir da pasta raiz do repositório:
+
+```bash
+python -m unittest discover -s Exercicio_Calculadora -p "test_*.py"
+```
+
+Os testes usam `unittest`, que já faz parte do Python. Não é necessário instalar pacotes extras.
+
+## 🧮 Exemplo de uso
 
 ```text
 Escolha uma operação:
@@ -49,5 +59,6 @@ Resultado: 12
 - Conversão e validação de entrada.
 - `Decimal` para trabalhar com números decimais.
 - Tratamento de exceções.
+- Testes automatizados.
 
-Este projeto faz parte dos estudos de Introdução à Programação — UniFAJ e pode ser expandido com novas operações e testes automatizados.
+Este projeto faz parte dos estudos de Introdução à Programação — UniFAJ e pode ser expandido com novas operações e melhorias.
