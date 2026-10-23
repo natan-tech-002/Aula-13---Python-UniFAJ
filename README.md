@@ -13,6 +13,7 @@ A pasta [**Exercicio_Calculadora**](https://github.com/natan-tech-002/Aula-13---
 - Soma, subtrai, multiplica e divide.
 - Aceita números decimais com vírgula ou ponto.
 - Valida entradas e trata divisão por zero.
+- Inclui testes automatizados para as operações e casos importantes.
 - Usa apenas a biblioteca padrão do Python.
 
 ### ▶️ Executar
@@ -29,6 +30,14 @@ No Windows, também pode funcionar com:
 py Exercicio_Calculadora/calculadora.py
 ```
 
+### 🧪 Executar os testes
+
+```bash
+python -m unittest discover -s Exercicio_Calculadora -p "test_*.py"
+```
+
+Os testes usam o `unittest` que já vem com Python. Não é necessário instalar dependências extras.
+
 Confira o [guia da calculadora](https://github.com/natan-tech-002/Aula-13---Python-UniFAJ/blob/main/Exercicio_Calculadora/README.md) para ver os detalhes e um exemplo de uso.
 
 ## 📁 Estrutura
@@ -37,6 +46,7 @@ Confira o [guia da calculadora](https://github.com/natan-tech-002/Aula-13---Pyth
 Aula-13---Python-UniFAJ/
 ├── Exercicio_Calculadora/
 │   ├── calculadora.py
+│   ├── test_calculadora.py
 │   └── README.md
 ├── teste.py
 └── README.md
@@ -50,5 +60,6 @@ O arquivo `teste.py` é mantido como parte dos materiais já existentes do repos
 - Ler e validar valores informados pelo usuário.
 - Organizar um programa em partes menores.
 - Documentar como executar o código.
+- Verificar resultados com testes automatizados.
 
 Este repositório está em evolução conforme os estudos avançam.
